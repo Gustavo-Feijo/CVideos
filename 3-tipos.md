@@ -22,7 +22,7 @@ ___
 long long int &rarr; **%lld** &rarr; -2⁶³ à 2⁶³-1.
 unsigned long long int &rarr; **%llu** &rarr; 0 à 18,446,744,073,709,551,615.
 ___
-char &rarr; **%c** &rarr; -127 à 128.
+char &rarr; **%c** &rarr; -128 à 127.
 unsigned char &rarr; **%c** &rarr; 0 à 255.
 ___
 float &rarr; **%f** &rarr; -1.2 * 10⁻³⁸ à 3.4 * 10³⁸.
