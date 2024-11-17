@@ -55,7 +55,7 @@ int main()
 
     // Por ultimo, há duas keywords que permitem controlar o fluxo do loop.
     // Break e continue.
-    for (int k = 0; k < 5; k++)
+    for (int k = 0; k < 50; k++)
     {
         // Continue irá pular a iteração, prosseguindo direto para incrementar k.
         if (k == 2)

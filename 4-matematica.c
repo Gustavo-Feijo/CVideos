@@ -3,7 +3,6 @@
  * Contudo, nesta parte, apenas operações simples serão abordadas.
  */
 #include <stdio.h>
-
 int main()
 {
 
@@ -17,13 +16,13 @@ int main()
     printf("Valor após adicionar 2: %d\n", x);
 
     // Todas expressões abaixo serão abreviadas, mas é possivel utilizar elas com o primeiro simbolo, exemplo: 4 * 5, que resulta em 20.
-    x -= 10;
+    x -= 10; // x = x - 10
     printf("Valor após subtrair 10: %d\n", x);
 
-    x *= 20;
+    x *= 20; // x = x * 20
     printf("Valor após multiplicar por 20: %d\n", x);
 
-    x /= 5;
+    x /= 5; // x = x / 5
     printf("Valor após dividir por 5: %d\n", x);
 
     // Também podemos utilizar algumas expressões diferentes, como o %, que irá retornar a sobra de uma divisão.
@@ -31,7 +30,7 @@ int main()
     printf("Resto da divisão por 3: %d\n", x);
 
     // Também podemos aumentar e diminuir o valor de uma variavel em 1 através de:
-    x++;
+    x++; // x +=1 ou x = x + 1
     x--;
     // Ambos somam/diminuem 1 do valor.
 

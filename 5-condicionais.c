@@ -4,7 +4,6 @@
  */
 #include <stdio.h>
 #include <stdbool.h>
-#define CU 5;
 int main()
 {
     int x = 5;
