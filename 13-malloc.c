@@ -14,7 +14,7 @@ int main()
     // Alocamos um valor equivalente à 5 * o tamanho de um int. sizeof(int) retorna quantos bits um int ocupa.
     int *ptr_x = (int *)malloc(5 * sizeof(int));
 
-    // Este tipo de alocação pode falar, por isto, devemos verificar se o ponteiro não é nulo após sua inicialização.
+    // Este tipo de alocação pode falhar, por isto, devemos verificar se o ponteiro não é nulo após sua inicialização.
     if (ptr_x == NULL)
     {
         printf("Não foi possivel alocar o ponteiro.\n");

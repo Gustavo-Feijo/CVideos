@@ -44,12 +44,6 @@ int main()
         printf("5 é diferente de 4.\n");
     }
 
-    // Também é possivel criar uma cadeia de if->else if.
-    if (5 == 5)
-    {
-        printf("5 é igual à 5.\n");
-    }
-
     // Caso seja falso, o bloco não será executado.
     if (5 == 4)
     {
@@ -72,7 +66,7 @@ int main()
     printf("X é igual à 5? %c\n", (x == 5) ? 'V' : 'F');
 
     int resultado = (5 == 4);
-    char letra = 'A';
+    char letra = 'd';
 
     int eminuscula = ((letra >= 97) && (letra <= 122));
 

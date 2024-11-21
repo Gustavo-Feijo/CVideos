@@ -6,9 +6,13 @@
  * A base da função nada mais é do que: tipo, nome e parametros.
  */
 #include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+#include <stdlib.h>
 
 int soma(int x, int y); // Está é a definição de uma função, que retorna um int, se chama soma, e recebe como parametro dois ints, um chamado x e o outro, y.
 void salve();           // Está é uma void funcion, não retorna nenhum valor. Neste caso, também não recebe parametros.
+float bhaskara(float a, float b, float c, bool getPositive);
 // Está definição não faz nada, apenas diz que ela existe, iremos dizer o que ela faz no final do arquivo.
 int main()
 {
@@ -16,7 +20,8 @@ int main()
     // soma(5,10) é a chamada da função, passando os parametros 5 e 10, 5 para o parametro x, e 10 para o y.
     int resultado = soma(5, 10);
     printf("%d\n", resultado);
-    salve(); // Chamada da void funcion salve.
+    salve();                                  // Chamada da void funcion salve.
+    printf("%f\n", bhaskara(1, 4, -8, true)); // x²+4x-8
     return 0;
 }
 
@@ -35,6 +40,18 @@ void salve()
     // Escreve salve no terminal.
     printf("Salve\n");
     // Não retorna valor, apenas volta ao fluxo normal do código.
+}
+
+float bhaskara(float a, float b, float c, bool getPositive)
+{
+    float delta = pow(b, 2) - (4 * a * c);
+    if (delta < 0)
+    {
+        printf("O delta é negativo.\n");
+        exit(-1);
+    }
+    int signal = (getPositive) ? 1 : -1;
+    return (-b + (signal * sqrt(delta))) / 2 * a;
 }
 
 // Funções são extremamente uteis para reduzir repetição, apenas sendo necessário utilizar os parametros que irão mudar.

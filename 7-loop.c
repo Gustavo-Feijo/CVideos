@@ -40,7 +40,7 @@ int main()
     // Faz o mesmo papel do while, mas realizar o código ao menos uma vez antes de checar a condição.
     do
     {
-        printf("Do While rodando");
+        printf("Do While rodando\n");
     } while (1 == 0);
 
     // Um exemplo de aplicação para um loop:
@@ -65,5 +65,19 @@ int main()
             break;
         printf("%d\n", k);
     }
+
+    int linhas;
+    printf("Insira quantas linhas você deseja.\n");
+    scanf("%d", &linhas);
+
+    for (int i = 0; i < linhas; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
     return 0;
 }
